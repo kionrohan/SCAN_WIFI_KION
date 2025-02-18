@@ -1,6 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
+    id ("org.sonarqube") version "6.0.1.5171"
 }
+
+sonar {
+    properties {
+        property("sonar.projectKey", "kiongroup_diagmngt-driver_authentication_mobile_app_AZTZvebKDOvm1MMakWhR")
+    }
+}
+
 
 android {
     namespace = "com.example.scan_wifi_kion"
